@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.w77996.cafeprint.MainActivity">
+    <!--<com.w77996.cafeprint.view.CustomViews
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.w77996.cafeprint.view.CustomViews>-->
+   <!-- <com.w77996.cafeprint.view.CustomViews
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <com.w77996.cafeprint.utils.MyMatrixImg
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="matrix"
+            />
+    </com.w77996.cafeprint.view.CustomViews>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_grey_500_color_code"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/img_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拍照"/>
+        <Button
+            android:id="@+id/btn_select_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地图片"/>
+        <Button
+            android:id="@+id/btn_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传"/>
+    </LinearLayout>
+
+</LinearLayout>
